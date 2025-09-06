@@ -1,7 +1,7 @@
 # IPSec Site-to-Site VPN Lab
 ## Multi-Vendor Network Infrastructure with Cisco & Fortinet
 
-![Network Topology](ipsec.png)
+![Network Topology](IPSEC.png)
 
 ## Lab Overview
 
