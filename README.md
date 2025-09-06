@@ -75,7 +75,6 @@ This lab demonstrates a real-world enterprise network scenario featuring an IPSe
 
 ### FortiGate VPN Configuration
 ```bash
-```bash
 # HQ FortiGate IPSec Configuration
 config vpn ipsec phase1-interface
     edit "HQtoBR"
