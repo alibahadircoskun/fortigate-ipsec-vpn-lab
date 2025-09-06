@@ -1,7 +1,7 @@
 # IPSec Site-to-Site VPN Lab
 ## Multi-Vendor Network Infrastructure with Cisco & Fortinet
 
-![Network Topology](topology-diagram.png)
+![Network Topology](ipsec.png)
 
 ## Lab Overview
 
@@ -128,21 +128,3 @@ ip routing
 | Access Switch | Cisco | 4 | End-device connectivity |
 | Server | Windows Server 2019 | 1 | AD, DNS, File services |
 | Workstations | Windows 7 | 8 | End-user devices |
-
-## Repository Structure
-
-```
-├── configs/
-│   ├── fortigate/
-│   │   ├── hq-fw-config.conf
-│   │   └── br-fw-config.conf
-│   ├── cisco/
-│   │   ├── hq-core-sw.cfg
-│   │   ├── hq-access-sw.cfg
-│   │   └── br-sw.cfg
-├── documentation/
-│   ├── network-diagram.png
-│   ├── ip-addressing.xlsx
-│   └── troubleshooting-guide.md
-└── README.md
-```
