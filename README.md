@@ -75,22 +75,27 @@ This lab demonstrates a real-world enterprise network scenario featuring an IPSe
 
 ### FortiGate VPN Configuration
 ```bash
+```bash
 # HQ FortiGate IPSec Configuration
 config vpn ipsec phase1-interface
-    edit "Branch-VPN"
+    edit "HQtoBR"
         set interface "port3"
+        set peertype any
+        set proposal des-md5 des-sha1
+        set wizard-type static-fortigate
         set remote-gw 198.51.100.1
-        set psksecret "YourSecretKey"
-        set proposal aes256-sha256
+        set psksecret "********"
     next
 end
 
 config vpn ipsec phase2-interface
-    edit "Branch-VPN-P2"
-        set phase1name "Branch-VPN"
-        set proposal aes256-sha256
-        set src-subnet 192.168.0.0/16
-        set dst-subnet 10.10.0.0/16
+    edit "HQtoBR"
+        set phase1name "HQtoBR"
+        set proposal des-md5 des-sha1
+        set src-addr-type name
+        set dst-addr-type name
+        set src-name "HQtoBR_local"
+        set dst-name "HQtoBR_remote"
     next
 end
 ```
