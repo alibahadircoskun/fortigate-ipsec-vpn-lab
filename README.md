@@ -115,7 +115,7 @@ interface vlan 30
 ip routing
 ```
 
-## Equipment Used
+## Images Used
 
 | Device Type | Model | Quantity | Purpose |
 |-------------|-------|----------|---------|
